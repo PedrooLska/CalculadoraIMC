@@ -11,9 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     height: 100vh;
-
     background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
 }
 
@@ -26,10 +24,8 @@ body {
 
 .content__input {
     width: 250px;
-
     padding: 10px 20px;
     margin-bottom: 30px;
-
     background: transparent;
     border: solid 1px white;
 }
@@ -53,11 +49,10 @@ body {
     background: white;
 }
 
-.content table {
+.content__table {
     width: 600px;
     height: 300px;
     margin-bottom: 30px;
-
     border-collapse: collapse;
     text-align: center;
 }
@@ -66,8 +61,7 @@ body {
     letter-spacing: 0.2rem;
 }
 
-.content table,
-.content th,
+.content__table,
 .content td {
     border: 1px solid white;
 }
