@@ -5,9 +5,9 @@ Projeto desenvolvido para calcular seu IMC.
 
 :white_check_mark: - HTML5
 
-:white_check_mark: - CSS3
+:white_check_mark: - CSS3 (BEM Architecture)
 
-:white_check_mark: - JavaScript (Class, This, Constructor Math, Slice)
+:white_check_mark: - JavaScript (Arrow Function, Math, Slice, toFixed, Number)
 
 <h2>:page_facing_up: Layout</h2>
 
