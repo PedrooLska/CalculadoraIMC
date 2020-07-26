@@ -17,14 +17,14 @@ body {
     background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
 }
 
-.wrapper {
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.wrapper input {
+.content__input {
     width: 250px;
 
     padding: 10px 20px;
@@ -34,29 +34,26 @@ body {
     border: solid 1px white;
 }
 
-.wrapper input::placeholder {
+.content__input::placeholder {
     color: rgb(190, 190, 190);
 }
 
-.wrapper button {
+.content__button {
     padding: 15px 50px;
-
     border-radius: 30px;
     border: solid 1px white;
     background: transparent;
-
     cursor: pointer;
-
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.wrapper button:hover {
+.content__button:hover {
     color: black;
     background: white;
 }
 
-.wrapper table {
+.content table {
     width: 600px;
     height: 300px;
     margin-bottom: 30px;
@@ -65,14 +62,16 @@ body {
     text-align: center;
 }
 
-.wrapper th {
+.content th {
     letter-spacing: 0.2rem;
 }
 
-.wrapper table, .wrapper th, .wrapper td {
+.content table,
+.content th,
+.content td {
     border: 1px solid white;
 }
 
-footer i {
+.footer__icon {
     color: red;
 }

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora IMC</title>
-
-    <!-- StyleSheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <h1>Calculadora IMC</h1>
-        <label>Peso<br><input type="text" placeholder="Coloque seu peso" class="peso"> kg</label>
-        <label>Altura<br><input type="text" placeholder="Coloque sua altura" class="altura"> cm</label>
-        <button onclick="newCalculadoraIMC.calcularIMC()">Calcular IMC</button>
-        <h2>O resultado do seu IMC é : <a class="resultado"></a></h2>
+    <div class="content">
+        <h1 class="content__title">Calculadora IMC</h1>
+        <label>Peso<br><input type="text" placeholder="Coloque seu peso" class="content__input" id="peso"> kg</label>
+        <label>Altura<br><input type="text" placeholder="Coloque sua altura" class="content__input" id="altura">
+            cm</label>
+        <button class="content__button" onclick="calculadoraIMC()">Calcular IMC</button>
+        <h2>O resultado do seu IMC é : <a class="content__resultado" id="resultado"></a></h2>
 
         <div class="table">
             <table>
@@ -52,9 +52,8 @@
             </table>
         </div>
     </div>
-
-    <footer><a>Desenvolvido por Pedro Lucas</a> <i class="fas fa-heart"></i></footer>
-    
+    <footer class="footer"><a>Desenvolvido por Pedro Lucas</a> <i class="footer__icon fas fa-heart"></i></footer>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

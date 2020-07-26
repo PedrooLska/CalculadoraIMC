@@ -1,26 +1,18 @@
-class calculadoraIMC {
-    constructor() {
-        this.peso = document.querySelector('.peso');
-        this.altura = document.querySelector('.altura'); 
-    }
+const peso = document.querySelector('#peso');
+const altura = document.querySelector('#altura');
+const resultado = document.querySelector('#resultado');
 
-    calcularIMC() {
-        let peso = this.peso.value;
-        let altura = this.altura.value;
-
-        const IMC = peso / Math.pow(this.converterAltura(altura), 2)
-
-      this.resultText(IMC.toFixed(1));
-    }
-
-    converterAltura(altura) {
-        return altura.slice(0, 1) + '.' + altura.slice(1, 3);
-    } 
-
-    resultText(resultText) {
-        let el = document.querySelector('.resultado');
-        el.innerHTML = resultText;
-    }
+const calculadoraIMC = () => {
+    let pesoValue = peso.value;
+    let alturaValue = altura.value;
+    const IMC = Number(pesoValue) / Math.pow(converterAltura(alturaValue), 2)
+    resultadoTexto(IMC.toFixed(1));
 }
 
-const newCalculadoraIMC = new calculadoraIMC();
+const converterAltura = (altura) => {
+    return altura.slice(0, 1) + '.' + altura.slice(1, 3);
+}
+
+const resultadoTexto = (resultText) => {
+    resultado.innerHTML = resultText;
+}
